@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Woodpigeon</title>
+  <title>Category: Heroku - Woodpigeon</title>
   <meta name="author" content="Tim Crowe">
 
   
-  <meta name="description" content="Keeping your Heroku slug size down is a good idea if you have web dynos you want to auto-scale, or you are starting a lot of worker dynos. According &hellip;">
+  <meta name="description" content="Category: Heroku">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://woodpigeon.github.io">
+  <link rel="canonical" href="http://woodpigeon.github.ioblog/categories/heroku">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="Woodpigeon" type="application/atom+xml">
@@ -63,61 +63,41 @@
 </nav>
   <div id="main">
     <div id="content">
-      <div class="blog-index">
+      <div>
+<article role="article">
   
-  
-  
-    <article>
-      
   <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/07/02/herokus-slugignore/">Heroku&#8217;s .slugignore</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-07-02T23:27:00+01:00" pubdate data-updated="true">Jul 2<span>nd</span>, 2013</time>
-        
-      </p>
+    <h1 class="entry-title">Category: Heroku</h1>
     
   </header>
+  
+  <div id="blog-archives" class="category">
 
 
-  <div class="entry-content"><p>Keeping your Heroku slug size down is a good idea if you have web dynos you want to auto-scale, or you are starting a lot of worker dynos.  According to Heroku, a small slug is more nimble (imagine!) because it allows new dynos to be initialised and spun up more quickly.</p>
 
-<p>Recently reading <a href="http://shop.oreilly.com/product/0636920027409.do">Heroku: Up and Running</a> &ndash; a usefully concise and no-nonsense book &ndash; I found among the gems there something that I seem to have missed &ndash; the <a href="https://devcenter.heroku.com/articles/slug-compiler#ignoring-files-with-slugignore">.slugignore</a> file. Similar in concept to a .gitignore, once added to your project folder you can use it to specify which folders and files Heroku should exclude when compiling your slug. (Those files and folders still remain in the Heroku git remote repo, they are just excluded from the deployed code base).</p>
+  
+  <h2>2013</h2>
 
-<p>Armed with this new knowledge and dizzy with anticipation, I added a .slugignore to an existing Rails app, excluded all tests and docs, and pushed to Heroku. My slug downsized from 38.5 MB to &hellip;38.5 MB. Some rounding in the reporting of this figure by Heroku has obscured the fact the change in slug size is, well, quite small.</p>
+<article>
+  
+<h1><a href="/blog/2013/07/02/herokus-slugignore/">Heroku's .slugignore</a></h1>
+<time datetime="2013-07-02T23:27:00+01:00" pubdate><span class='month'>Jul</span> <span class='day'>02</span> <span class='year'>2013</span></time>
 
-<p>The conclusion is pretty obvious and I should have seen it coming: you need to be able to exclude some pretty weighty files before seeing a significant reduction in your slug size; after all, your code is pretty insignificant next to all those gem dependencies Heroku shoehorns into your slug.</p>
+<footer>
+  <span class="categories">posted in <a class='category' href='/blog/categories/heroku/'>Heroku</a></span>
+</footer>
 
-<p>While I think I&rsquo;ll include a .slugignore in new Heroku apps &ndash; as a reminder to be vigilant for large, non-essential files and folders &ndash; I think better slug-slimming mileage is had by scrutinising the Gemfile for debug and test gems that are creeping unnoticed into production, and using <a href="http://bundler.io/v1.3/groups.html">groups</a> to filter these out.</p>
 
-<p>Something to watch, and the book hints at this, is that an aggressive .slugignore could trip you up during deployment. If for example you choose to globally exclude *.pdf, but then you decide to add a user-downloadable pdf document, your pdf will not get deployed. That could be a pretty confusing issue if the existence or meaning of the .slugignore has dropped off the edge of your memory!</p>
+</article>
+
 </div>
+
   
-  
+</article>
 
 
-    </article>
-  
-  <div class="pagination">
-    
-    <a href="/blog/archives">Blog Archives</a>
-    
-  </div>
 </div>
+
 <aside class="sidebar">
   
     <section>
@@ -125,7 +105,7 @@
   <ul id="recent_posts">
     
       <li class="post">
-        <a href="/blog/2013/07/02/herokus-slugignore/">Heroku&#8217;s .slugignore</a>
+        <a href="/blog/2013/07/02/herokus-slugignore/">Heroku's .slugignore</a>
       </li>
     
   </ul>
@@ -134,7 +114,7 @@
 <section>
   <h1>GitHub Repos</h1>
   <ul id="gh_repos">
-    <li class="loading">Status updating&#8230;</li>
+    <li class="loading">Status updating...</li>
   </ul>
   
   <a href="https://github.com/woodpigeon">@woodpigeon</a> on GitHub
@@ -166,6 +146,7 @@
 
   
 </aside>
+
 
     </div>
   </div>
