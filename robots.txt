@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: 
+
+Sitemap: http://woodpigeon.github.io/sitemap.xml 
